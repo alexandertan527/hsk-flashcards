@@ -1,9 +1,12 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+require "csv"
+
+p "Creating words..."
+
+filepath = "db/hsk1-words.csv"
+
+CSV.foreach(filepath, headers: false) do |row|
+  word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+  word.save!
+end
+
+p "All done"
