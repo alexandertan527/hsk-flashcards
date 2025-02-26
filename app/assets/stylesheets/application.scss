@@ -1,1 +1,19 @@
 @import "bootstrap";
+@import "pages/home";
+
+.navbar-brand {
+  color: #023e8a !important;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.custom-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.nav-link {
+  color: #023e8a !important;
+}
