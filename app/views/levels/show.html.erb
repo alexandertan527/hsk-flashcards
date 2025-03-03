@@ -1,0 +1,21 @@
+<div class="container d-flex flex-column justify-content-center align-items-center" data-controller="reveal-card" style="height: 75vh;">
+
+  <div class="flashcard card d-flex justify-content-center align-items-center text-light mb-3" data-action="click->reveal-card#show">
+    <% card = @cards.sample %>
+    <h2 data-reveal-card-target="revealCard"><%= card.character %></h2>
+
+    <div class="d-flex flex-column justify-content-center align-items-center d-none" data-reveal-card-target="translation">
+      <h3><%= card.character %></h3>
+      <h4><%= card.pinyin %></h4>
+      <h4><%= card.translation %></h4>
+    </div>
+  </div>
+
+
+  <div class="mt-5 invisible" data-reveal-card-target="nextButton">
+    <button class="btn btn-outline-secondary" data-action="click->reveal-card#loadNewCard">
+      <i class="fa-solid fa-arrow-right"></i>
+      Next Card
+    </button>
+  </div>
+</div>
