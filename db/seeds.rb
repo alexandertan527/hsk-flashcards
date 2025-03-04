@@ -1,20 +1,3 @@
-# Seeding HSK1 words
-
-# require "csv"
-
-# p "Creating words..."
-
-# filepath = "db/hsk1-words.csv"
-
-# CSV.foreach(filepath, headers: false) do |row|
-#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
-#   word.save!
-# end
-
-# p "All done"
-
-
-
 # Seeding Levels
 
 # p "Creating Levels..."
@@ -34,3 +17,81 @@
 
 
 
+# require "csv"
+
+# Seeding HSK1 words
+
+
+# p "Creating words..."
+
+# filepath = "db/hsk1-words.csv"
+
+# CSV.foreach(filepath, headers: false) do |row|
+#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+#   word.save!
+# end
+
+# p "All done"
+
+
+
+# Seeding HSK2 words
+
+
+# p "Creating words..."
+
+# filepath = "db/hsk2-words.csv"
+
+# CSV.foreach(filepath, headers: false) do |row|
+#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+#   word.save!
+# end
+
+# p "All done"
+
+
+
+# Seeding HSK3 words
+
+
+# p "Creating words..."
+
+# filepath = "db/hsk3-words.csv"
+
+# CSV.foreach(filepath, headers: false) do |row|
+#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+#   word.save!
+# end
+
+# p "All done"
+
+
+
+# Seeding HSK4 words
+
+
+# p "Creating words..."
+
+# filepath = "db/hsk4-words.csv"
+
+# CSV.foreach(filepath, headers: false) do |row|
+#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+#   word.save!
+# end
+
+# p "All done"
+
+
+# Seeding HSK5 words
+
+
+# p "Creating words..."
+
+# filepath = "db/hsk5-words.csv"
+
+# CSV.foreach(filepath, headers: false) do |row|
+#   word = Character.new(character: row[0], pinyin: row[1], translation: row[2], level: row[3])
+#   word.save!
+# end
+
+# p "All done"
