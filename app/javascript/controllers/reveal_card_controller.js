@@ -11,6 +11,7 @@ export default class extends Controller {
   }
 
   async loadNewCard() {
+    this.nextButtonTarget.classList.add("invisible");
     try {
       const response = await fetch(window.location.pathname, {
         headers: { "Accept": "text/vnd.turbo-stream.html" }
@@ -19,7 +20,7 @@ export default class extends Controller {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
       const text = await response.text();
-      Turbo.renderStreamMessage(text); 
+      Turbo.renderStreamMessage(text);
     } catch (error) {
       console.error("Error loading new card:", error);
     }
