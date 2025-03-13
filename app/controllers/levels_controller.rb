@@ -2,6 +2,7 @@ class LevelsController < ApplicationController
   before_action :set_card_deck, only: [:show]
 
   def index
+    @levels = Level.all
   end
 
   def show

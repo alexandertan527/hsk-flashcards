@@ -1,41 +1,15 @@
 <div class="container text-center d-flex flex-column justify-content-center" style="height: 80vh;">
-  <div class="row d-flex justify-content-evenly">
-    <div class="col-4 d-flex justify-content-center">
-      <%= link_to 'levels/6', class: "text-decoration-none d-block h-100" do %>
-        <div class="card d-flex justify-content-center text-light">
-          <h2>HSK1</h2>
-        </div>
-      <% end %>
-    </div>
-    <div class="col-4 d-flex justify-content-center">
-      <%= link_to 'levels/7', class: "text-decoration-none d-block h-100" do %>
-        <div class="card d-flex justify-content-center text-light">
-          <h2>HSK2</h2>
-        </div>
-      <% end %>
-    </div>
-    <div class="col-4 d-flex justify-content-center">
-      <%= link_to 'levels/8', class: "text-decoration-none d-block h-100" do %>
-        <div class="card d-flex justify-content-center text-light">
-          <h2>HSK3</h2>
-        </div>
-      <% end %>
-    </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-3 g-5">
+    <% @levels.each do |level| %>
+      <div class="col mb-5">
+        <%= link_to level_path(level), class: "text-decoration-none d-block h-100" do %>
+          <div class="card flashcard d-flex justify-content-center text-light">
+            <h2><%= level.level.upcase %></h2>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
-  <div class="row mt-5 d-flex justify-content-evenly">
-    <div class="col-6 d-flex justify-content-center">
-      <%= link_to 'levels/9', class: "text-decoration-none d-block h-100" do %>
-        <div class="card d-flex justify-content-center text-light">
-          <h2>HSK4</h2>
-        </div>
-      <% end %>
-    </div>
-    <div class="col-6 d-flex justify-content-center">
-      <%= link_to 'levels/10', class: "text-decoration-none d-block h-100" do %>
-        <div class="card d-flex justify-content-center text-light">
-          <h2>HSK5</h2>
-        </div>
-      <% end %>
-    </div>
-  </div>
+
 </div>
