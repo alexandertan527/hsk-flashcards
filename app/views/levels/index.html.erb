@@ -4,7 +4,7 @@
     <% @levels.each do |level| %>
       <div class="col mb-5 d-flex justify-content-center">
         <%= link_to level_path(level), class: "text-decoration-none d-block h-100" do %>
-          <div class="card d-flex justify-content-center">
+          <div class="card hsk-card d-flex justify-content-center">
             <h2><%= level.level.upcase %></h2>
           </div>
         <% end %>

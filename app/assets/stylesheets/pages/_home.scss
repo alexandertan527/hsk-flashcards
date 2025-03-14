@@ -1,10 +1,13 @@
 .card {
   width: 18rem !important;
   height: 10rem !important;
-  background-color: #560B0B;
   color: #FFCB7B;
   border: none;
   transform: scale(1.25);
+}
+
+.hsk-card {
+  background-color: #560B0B;
 }
 
 .container {

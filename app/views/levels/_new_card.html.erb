@@ -1,15 +1,14 @@
-<div id="flashcard" class="flashcard card d-flex justify-content-center align-items-center mb-3" data-action="click->reveal-card#show" data-reveal-card-target="newCard">
-  <div class="card-inner">
+<div id="flashcard" class="flashcard card d-flex justify-content-center align-items-center mb-3" data-action="click->reveal-card#show">
+  <div class="card-inner" data-reveal-card-target="card">
 
-    <div class="card-face card-face-front">
-      <h2 data-reveal-card-target="revealCard"><%= card.character %></h2>
+    <div class="card-face card-face-front d-flex justify-content-center align-items-center">
+      <h2><%= card.character %></h2>
     </div>
 
     <div class="card-face card-face-back">
-      <div class="d-flex flex-column justify-content-center align-items-center d-none" data-reveal-card-target="translation">
-        <h3><%= card.character %></h3>
-        <h4><%= card.pinyin %></h4>
-        <h4><%= card.translation %></h4>
+      <div class="card-content d-flex flex-column justify-content-center align-items-center">
+        <h4><%= card.pinyin.capitalize %></h4>
+        <h4><%= card.translation.capitalize %></h4>
       </div>
     </div>
 
