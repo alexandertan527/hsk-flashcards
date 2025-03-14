@@ -1,15 +1,53 @@
-.card {
-  width: 18rem !important;
-  height: 10rem !important;
-  color: #FFCB7B;
-  border: none;
-  transform: scale(1.25);
+@media (max-width: 576px) {
+  .card {
+    width: 18rem !important;
+    height: 10rem !important;
+    color: #FFCB7B;
+    border: none;
+    transform: scale(1);
+  }
+
+  .hsk-card {
+    background-color: #560B0B;
+  }
+
+  .col {
+    margin-bottom: 5px !important;
+  }
 }
 
-.hsk-card {
-  background-color: #560B0B;
+@media (max-width: 1200px) {
+  .card {
+    width: 18rem !important;
+    height: 10rem !important;
+    color: #FFCB7B;
+    border: none;
+    transform: scale(1);
+  }
+
+  .hsk-card {
+    background-color: #560B0B;
+  }
+
+  .col {
+    margin-bottom: 24px !important;
+  }
 }
 
-.container {
-  position: relative !important;
+@media (min-width: 1200px) {
+  .card {
+    width: 18rem !important;
+    height: 10rem !important;
+    color: #FFCB7B;
+    border: none;
+    transform: scale(1.25);
+  }
+
+  .hsk-card {
+    background-color: #560B0B;
+  }
+
+  .col {
+    margin-bottom: 48px !important;
+  }
 }
