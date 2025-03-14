@@ -2,11 +2,13 @@
   @media (max-width: 576px) {
     .flashcard h2{
       font-size: 50px !important;
+      color: #FFCB7B;
     }
   }
 
   @media (min-width: 576px) {
     .flashcard {
       transform: scale(1.5);
+      color: #FFCB7B;
     }
   }
