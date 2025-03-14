@@ -14,6 +14,10 @@
   .col {
     margin-bottom: 5px !important;
   }
+
+  .hsk-card-container {
+    padding-top: 20px !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -32,6 +36,10 @@
   .col {
     margin-bottom: 24px !important;
   }
+
+  .hsk-card-container {
+    padding-top: 20px !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -49,5 +57,9 @@
 
   .col {
     margin-bottom: 48px !important;
+  }
+
+  .hsk-card-container {
+    padding-top: 50px !important;
   }
 }
