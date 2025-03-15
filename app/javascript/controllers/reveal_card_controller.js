@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="reveal-card"
 export default class extends Controller {
-  static targets = ["card", "nextButton"]
+  static targets = ["nextButton", "card"]
 
   show() {
     this.cardTarget.classList.toggle('is-flipped');
